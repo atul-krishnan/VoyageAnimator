@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #030b14;
+  --bg-panel: #071726;
+  --text-primary: #eff6ff;
+  --text-muted: #a8bed5;
+  --accent-mint: #72f7cf;
+  --accent-amber: #f6a866;
+}
+
+@theme inline {
+  --font-display: var(--font-syne);
+  --font-body: var(--font-manrope);
+}
+
+* {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  transition-duration: 160ms;
+}
+
+::selection {
+  background: rgba(114, 247, 207, 0.4);
+  color: #061520;
+}
